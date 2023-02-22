@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="content" style="width: 700px;">
+                <div class="main-content">
+                    <h1 style="text-align: center; margin-bottom: 10px;">Insert data</h1>
+                    <h3>ชื่อ</h3>
+                    <input type="text" id="nameinput">
+                    <h3>นามสกุล</h3>
+                    <input type="text" id="surnameinput">
+                    <h3>เพศ</h3>
+                    <select name="" id="genderinput" style="width: 100%; ">
+                        <option value="none">ไม่ระบุ</option>
+                        <option value="male">ชาย</option>
+                        <option value="female">หญิง</option>
+                    </select>
+                    <h3>วันเกิด</h3>
+                    <input id="dateinput" style="width: 100%;" type="date">
+                    <button  class="btn" style="margin-top: 20px;" onclick="adddata()" >Add</button>
+                </div>
+            </div>
+        </div >
+        <div class="datatable">
+            <table class="ontable" id="newtabledata">
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Gender</th>
+                    <th>Birth date</th>
+                </tr>
+            </table>
+        </div >
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
